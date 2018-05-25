@@ -12,7 +12,7 @@
 
     - name: copy RPM from local
       copy:
-        src: "{{ playbook_dir }}/files/{{ jdk_tarball_file }}.rpm"
+        src: "/tmp/{{ jdk_tarball_file }}.rpm"
         dest: "{{ java_download_path }}/{{ jdk_tarball_file }}.rpm"
       when: ansible_pkg_mgr == "yum" or ansible_pkg_mgr == "zypper"
 

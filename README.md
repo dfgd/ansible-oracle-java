@@ -1,12 +1,6 @@
+# Summary
 
-williamyeh.oracle-java for Ansible Galaxy
-============
-
-[![Build Status](https://travis-ci.org/William-Yeh/ansible-oracle-java.svg?branch=master)](https://travis-ci.org/William-Yeh/ansible-oracle-java) [![Circle CI](https://circleci.com/gh/William-Yeh/ansible-oracle-java.svg?style=shield)](https://circleci.com/gh/William-Yeh/ansible-oracle-java)
-
-## Summary
-
-Role name in Ansible Galaxy: **[williamyeh.oracle-java](https://galaxy.ansible.com/williamyeh/oracle-java/)**
+Role name in Ansible Galaxy: **[dfgd.oracle-java](https://galaxy.ansible.com/dfgd/oracle-java/)**
 
 This Ansible role has the following features for Oracle JDK:
 
@@ -61,7 +55,7 @@ If you want to install a Java release which is not supported out-of-the-box, you
 - hosts: all
 
   roles:
-    - williamyeh.oracle-java
+    - dfgd.oracle-java
 
   vars:
     java_version: 8
@@ -97,7 +91,7 @@ jdk_tarball_file
 
 ### Step 1: add role
 
-Add role name `williamyeh.oracle-java` to your playbook file.
+Add role name `dfgd.oracle-java` to your playbook file.
 
 
 ### Step 2: add variables
@@ -113,7 +107,7 @@ Simple example:
 - hosts: all
 
   roles:
-    - williamyeh.oracle-java
+    - dfgd.oracle-java
 
   vars:
     java_version: 8
@@ -133,7 +127,7 @@ To do this, put the file on the `{{ playbook_dir }}/files` directory in advance,
 - hosts: all
 
   roles:
-    - williamyeh.oracle-java
+    - dfgd.oracle-java
 
   vars:
     java_version: 8
@@ -155,4 +149,6 @@ Licensed under the Apache License V2.0. See the [LICENSE file](LICENSE) for deta
 
 ## History
 
-Rewritten from my pre-Galaxy version: [server-config-template](https://github.com/William-Yeh/server-config-template).
+Changed by [dfgd](https://github.com/dfgd).
+
+Forked role from[William-Yeh](https://github.com/William-Yeh).
